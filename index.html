@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/responsive.css">
+    <title>QR Code Generator</title>
+</head>
+<body>
+ 
+    <div class="wrapper">
+        <header>
+            <h1>QR Code Generator</h1>
+            <p class="initial-para">Enter your URL below to generate a QR Code and download the image.</p>
+        </header>
+        <div id="form">
+
+            <input type="url" id="url" placeholder="Enter a URL">
+            <!-- Selecting different resolutions -->
+            <select  id="size">
+                <option value="100">100x100</option>
+                <option value="200">200x200</option>
+                <option value="300" selected>300x300</option>
+                <option value="400">400x400</option>
+                <option value="500">500x500</option>
+            </select>
+
+            <button class="qr-button"  type="submit" onclick="onFormClick()" >Generate QR Code</button>
+        </div>
+        
+  <!-- Generated QR Code Section -->
+  <div id="generated"></div>
+
+  <!-- Spinner -->
+<div id="spin"></div>
+
+
+  <!-- QR Code OUtput -->
+  <div id="qr-code"></div>
+</div> 
+<div class="cover-Img">
+  <img src="/images/qr-img.png" alt="man holding qrcode">
+</div> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>

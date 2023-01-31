@@ -1,0 +1,48 @@
+/* Mobile view code */
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    #form input {
+        padding: 0.3rem 0.1rem;
+        font-size: 12px;
+
+    }
+
+    .cover-Img img {
+        width: 100%;
+        height: auto;
+        max-width: 550px;
+    }
+
+    .qr-button {
+        padding: 0.3rem;
+    }
+
+    .initial-para {
+        color: black;
+    }
+}
+
+
+@media only screen and (max-width:1229px) {
+    .cover-Img {
+        display: none;
+
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    #save-link {
+        padding: 0.3rem;
+        font-size: 0.9rem;
+    }
+
+    #spin {
+        width: 40px;
+        height: 40px;
+    }
+}

@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+  background: url(/images/img2.png);
+  min-height: 80vh;
+}
+
+.cover-Img img {
+  max-width: 550px;
+  height: auto;
+  width: 100%;
+}
+
+.cover-Img {
+  /* border: 2px solid red; */
+  position: absolute;
+  right: 3%;
+  transform: rotate(-8deg);
+}
+
+header h1 {
+  text-align: center;
+}
+
+.wrapper {
+  border-radius: 12px;
+  background-color: #ffff;
+  border: 1px solid gray;
+  padding: 2rem 0.5rem;
+  min-width: 250px;
+  width: auto;
+  z-index: 10;
+}
+
+#form input {
+  padding: 0.5rem 0.2rem;
+  display: block;
+  border: 1px solid grey;
+  border-radius: 5px;
+  outline: none;
+  margin: 1rem 0;
+  min-width: 100%;
+}
+
+.initial-para {
+  font-size: 12px;
+  color: grey;
+  margin-top: 0.3rem;
+}
+
+#size {
+  width: 100%;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  outline: none;
+  margin-bottom: 0.8rem;
+  padding: 0.5rem 0;
+  color: #474747;
+}
+
+#size:focus,
+#size:hover {
+  border: 1px solid grey;
+}
+
+.qr-button {
+  position: relative;
+  ;
+  left: 11%;
+  background-image: linear-gradient(to right, #24C6DC 0%, #514A9D 51%, #24C6DC 100%);
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 8px;
+  display: block;
+  border: 2px solid transparent;
+  min-width: 80%;
+  padding: 0.5rem;
+}
+
+.qr-button:hover,
+.qr-button:active {
+  background-position: right center;
+  color: #fff;
+}
+
+#save-link {
+  display: inline-block;
+  background-image: linear-gradient(to right, #485563 0%, #29323c 51%, #485563 100%);
+  transition: 0.5s;
+  text-transform: capitalize;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #ffff;
+  margin: 12px 0;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+#save-link:hover,
+#save-link:active {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Final QR code output box */
+#qr-code {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+
+}
+
+/* spinner code  */
+#spin {
+  display: none;
+  animation: 1.5s linear infinite spinner;
+  animation-play-state: inherit;
+  border: solid 5px #cfd0d1;
+  border-bottom-color: #283e9e;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 18%;
+  left: 50%;
+  transform: translate3d(-50%, -50% - 0.5%);
+  width: 60px;
+  height: 60px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+/* Animation for loading.. */
+@keyframes spinner {
+  0% {
+    transform: translate3d(-50%, -50%, 0) rotate(0deg);
+  }
+
+  100% {
+    transform: translate3d(-50%, -50%, 0) rotate(360deg);
+  }
+}
