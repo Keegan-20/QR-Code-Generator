@@ -11,12 +11,14 @@
 
     }
 
-    .cover-Img img {
-        width: 100%;
-        height: auto;
-        max-width: 550px;
+    .m-exclude1{
+        display: none;
     }
 
+    .m-exclude2{
+        display: none;
+    }
+    
     .qr-button {
         padding: 0.3rem;
     }

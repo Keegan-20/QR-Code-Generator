@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/responsive.css">
     <title>QR Code Generator</title>
@@ -23,8 +24,8 @@
                 <option value="100">100x100</option>
                 <option value="200">200x200</option>
                 <option value="300" selected>300x300</option>
-                <option value="400">400x400</option>
-                <option value="500">500x500</option>
+                <option class="m-exclude1" value="400">400x400</option>
+                <option  class="m-exclude2" value="500">500x500</option>
             </select>
 
             <button class="qr-button"  type="submit" onclick="onFormClick()" >Generate QR Code</button>
