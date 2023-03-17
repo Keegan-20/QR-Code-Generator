@@ -1,5 +1,5 @@
 ## QR Code Generator
-A simple QR code generator that allows users to generate a QR code from a given URL.
+A simple QR code generator that allows users to generate a QR code from a given URL or text.
 
 ## Website Preview :
 ![website preview](./images/Qr%20code%20generator%20preview.PNG)
